@@ -18,7 +18,7 @@ function App() {
     setPosition({ x: clickedX, y: clickedY });
 
     // Flip horizontally if the clickedX is less than the current position.x
-    setIsFlipped(clickedX < position.x);
+    setIsFlipped(clickedX > position.x);
   };
   return (
     <div
